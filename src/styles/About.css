@@ -1,0 +1,98 @@
+.about-img{
+  height: 200px;
+
+  border-radius: 23px;
+  
+
+}
+.About-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12rem;
+  text-align: center;
+  margin-left: 1.3rem;
+  
+
+}
+.about-heading{
+  font-size: 1.2rem;
+  font-family: 'Roboto';
+  text-align: center;
+  
+  text-align: start;
+  margin-left: 0rem;
+  color: rgb(1, 1, 255);
+}
+.about-sec-heading{
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+.info{
+  text-align: center;
+  font-weight:400;
+  margin-left: 3rem;
+  margin-right:3rem;
+
+
+}
+.about-desktop{
+  display: none;
+}
+@font-face {
+  font-family: 'font';
+  src: url('../fonts/Sacramento-Regular.ttf');
+}
+
+@media screen and (min-width:800px ) {
+
+  .About-me{
+      display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 21rem;
+     margin-left: 4rem;
+
+  }
+  .about-mobile{
+   display: none;
+
+  }
+  .about-desktop{
+    display: block;
+  
+  }
+  .about-heading{
+   font-family: 'Roboto';
+  
+  }
+  .about-img{
+    height: 300px;
+  }
+  .about-heading{
+    font-size: 1.5rem;
+    text-align: start;
+    color: rgb(9, 9, 221);
+    
+  }
+  .about-sec-heading{
+    width: 60%;
+  }
+  .About-text{
+  
+    width: 30%;
+  }
+  .info{
+    width: 60%;
+  }
+  .About-text{
+    margin-left: 3rem;
+  }
+  
+}

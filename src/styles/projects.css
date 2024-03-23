@@ -1,0 +1,194 @@
+*{
+    font-family: 'Roboto';
+}
+.active{
+    background-color: black;
+    color: white;
+   
+
+}
+#selective-btns{
+    padding:  16px 37px;
+    margin: 0 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+}
+.projects-main-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+    margin-top: 12rem;
+    width: 100%;
+
+    
+
+}
+
+.projects-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ;
+    box-sizing: border-box; 
+   
+}
+.project-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pro-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Portfolio{
+    color: rgb(42, 42, 255);
+    font-size: 1.2rem;
+}
+.portfoio-para{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.project-card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    box-shadow:12px 18px 120px rgba(0,0,0,0.1);
+    background-color: rgb(255, 254, 254);
+    margin: 1.2rem 0.6rem;
+    padding: 0 50px;
+    height: 650px;
+    border-radius: 35px;
+    cursor: pointer;
+
+  
+   
+ 
+}
+.pro-img{
+    height: 355px;
+    aspect-ratio: 4/3;
+    border-radius: 23px;
+    object-fit: contain;
+}
+.live-btn{
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 9px 19px;
+    border-radius:8px;
+    cursor: pointer;
+
+    transition: 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pro-tech {
+    background-color: black;
+    color: white;
+    margin: 10px 5px;
+    padding: 4px 12px;
+    border-radius: 5px;
+
+}
+.pro-heading{
+    font-size: 2rem;
+
+    font-family: 'Roboto';
+}
+.tech-used{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pro-links{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+   
+}
+.pro-github{
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 9px 10px;
+    border-radius:8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-right:  0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.git-icon{
+    margin-left: 0.4rem;
+    font-size: 1.5rem;
+}
+.send{
+    margin-left: 0.4rem;
+    font-size: 1.4rem;
+}
+.no-projects{
+    color: rgb(42, 42, 255);
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+@media screen and (max-width:800px) {
+
+    .project-card{
+        height: 630px;
+    }
+    .pro-img{
+        aspect-ratio: 4/3;
+    }
+    #selective-btns{
+        padding:  10px 25px;
+        margin: 0 1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+      
+        
+       
+    }
+    
+}
+@media screen and (max-width:600px) {
+
+    .project-card{
+        height: 600px;
+    
+
+    }
+    .pro-img{
+        aspect-ratio: 3/4;
+    }
+   
+    
+}
+
+
+.pro-anker{
+    text-decoration: none;
+    color: black;
+    
+
+}

@@ -1,0 +1,310 @@
+
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/Sacramento-Regular.ttf');
+}
+html{
+    scroll-behavior: smooth;
+}
+.personal-info{
+    margin-right: 10rem;
+}
+.main-heading{
+    font-size: 1.2rem;
+}
+
+.name{
+      font-family: 'font';
+      font-size: 4rem;
+      font-weight: bold;
+}
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home{
+    display: flex;
+    justify-content: center;
+align-items: center;
+margin-top: 8rem;
+ height: 700px;
+}
+.developer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+.personal-img{
+    margin-right: 2rem;
+}
+
+
+.my-image{
+    height: 300px;
+ 
+   border-radius: 40%;
+     border: 3px solid black;
+    /* animation: borderMovement 4s linear infinite; */
+    cursor:pointer;
+   transition: 0.4s ease-in-out;
+    
+}
+
+.my-image:hover{
+    transform: scale(1.1);
+}
+
+.icons{
+    margin-top: 1.3rem;
+}
+
+.social-icon{
+    font-size: 2.2rem;
+    margin: 0rem 0.3rem;
+    cursor: pointer;
+    color: black;
+}
+.social-icon:hover{
+    color: rgb(174, 174, 174);
+}
+
+@keyframes borderMovement {
+
+    0%, 100% {
+        border-top-left-radius: 50%; /* Start and end with no border radius */
+    }
+    75%{
+        border-bottom-right-radius: 70%;
+    }
+    65%{
+        border-top-right-radius: 50%;
+    }
+  
+    50% {
+        border-bottom-left-radius: 30%; /* Middle with 50% border radius, making it a circle */
+    }
+}
+.plane{
+    height: 100px;
+   
+  
+   
+    animation: planeMovement 4s linear infinite;
+    
+}
+
+@keyframes planeMovement {
+
+    0%{
+        /* opacity: 0; */
+        transform: translateX(-300px);
+    }
+    30%{
+         transform: translateY(-100px);
+    }
+   
+   
+    100%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    
+}
+.technologies{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 14rem;
+    z-index: 11;
+    
+}
+.tech{
+    font-size: 1.4rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.tech-icons{
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+}
+.tech-img{
+    height: 60px;
+    object-fit: contain;
+    aspect-ratio: 6/9;
+    margin: 0 13px;
+    background-color: white;
+    /* mix-blend-mode: color-dodge; */
+    cursor: text;
+}
+.curved-lines{
+
+    width: 15%;
+    animation: none;
+}
+@keyframes curved {
+
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 8px 17px;
+    margin: 0 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(88, 88, 88);
+}
+.buttons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1132px) {
+    .personal-info{
+        margin-right: 1rem;
+    }
+    .personal-img{
+        margin-right: 0rem;
+    }
+  
+    
+}
+
+@media screen and (max-width : 886px) {
+    .plane{
+        display: none;
+    }
+    .curved-lines{
+
+        width: 15%;
+        animation: curved 2s infinite;
+    }
+    @keyframes curved {
+    
+        0%{
+            transform: translateY(-40px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+    
+}
+@media screen and (max-width:1092px) {
+    .technologies{
+        margin-right: 4rem;
+    }
+ 
+    
+}
+@media  screen and (max-width:847px) {
+
+    .technologies{
+        margin-right: 9rem;
+    }
+    .tech-img{
+    
+        margin: 0 10px;
+       
+    }
+    .tech{
+        font-size: 1.3rem;
+    }
+    .curved-lines{
+
+        width: 15%;
+        animation:  none;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .home{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column-reverse;
+     margin-top: 25rem;
+    }
+
+    .tech-img{
+
+     height: 30px;
+       }
+       .technologies{
+           margin-right: 7rem;
+           margin-top: 3rem;
+           justify-content: center;
+       }
+       .tech{
+        font-size: 1.1rem;
+        font-family: 'Roboto';
+       }
+       .curved-lines{
+
+        width: 15%;
+        animation: curved 2s infinite;
+    }
+    @keyframes curved {
+    
+        0%{
+            transform: translateY(-40px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+}
+@media screen and (max-width:500px) {
+   
+    .name{
+        font-size: 3rem;
+    }
+    .technologies{
+        margin-right: 4rem;
+       
+       
+    }
+    .tech{
+        font-size: 0.9rem;
+        font-family: 'Roboto';
+       }
+       .tech-img{
+    
+        margin: 0 8px;
+       
+
+    }
+    .curved-lines{
+
+        width: 15%;
+        animation: curved 2s infinite;
+    }
+    @keyframes curved {
+    
+        0%{
+            transform: translateY(-40px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+}
+
+
